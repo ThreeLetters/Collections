@@ -12,8 +12,9 @@ module.exports = class Queue {
   remove(node) {
     if (!this.ARR.length) return false;
     var ind = this.ARR.indexOf(node)
-    if (!ind) return false;
+    if (ind == -1) return false;
     this.ARR.splice(ind,1);
+   return true;
   }
   peek() {
     return this.ARR[0];
