@@ -18,6 +18,9 @@ module.exports = class Queue {
   peek() {
     return this.ARR[0];
   }
+  pop() {
+    this.ARR.splice(0,1);
+  }
   
   
 }
