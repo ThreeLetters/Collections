@@ -16,7 +16,7 @@ class Root {
 }
 
 class ListNode {
- constructor(child,parent,node,id) {
+ constructor(child,parent,node) {
    this.CHILD = child;
    this.NODE = node;
    this.PARENT = parent;
